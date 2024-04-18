@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>WEB | ANASAYFA</title>
+ <!--FONTS-->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/848045a3cd.js" crossorigin="anonymous"></script>
+<!--FONTS/-->
+<!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--bootstrap/-->
+<!--links-->
+    <link rel="stylesheet" href="style.css"/>
+    <link href="main.js"/>
+<!--links/-->
+</head>
+<body>
+   <!--navbar-->
+  <nav id="navB" class="navbar navbar-expand-lg mx-auto">
+    <div class="container-fluid mt-4 mx-auto">
+      <a href="#" class="navbar-brand text-white mx-2"><h2 class="h2">BRAND</h2></a>
+      <button class="navbar-toggler text-white bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-5">
+            <a class="nav-link active text-white mx-3 " id="page" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link text-white mx-3" id="page" href="#">Features</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link text-white mx-3" id="page" href="#">Pricing</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a href="#" class="nav-link text-white mx-3" id="page">Join Us</a>
+          </li>
+          <li class="nav-item dropdown mx-4 ">
+            <button class="btn  dropdown-toggle text-white" id="page" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              LİST
+            </button>
+            <ul class="dropdown-menu text-center rounded-4" id="listItem">
+              <li class="nav-item "id="listitem"><a href="#" class=" nav-link text-white my-1 rounded-5">LİST İTEM 1</a></li>
+              <li class="nav-item "id="listitem" ><a href="#" class="nav-link text-white my-2 rounded-5">LİST İTEM 2</a></button></li>
+              <li class="nav-item "id="listitem"><a href="#" class="nav-link text-white my-2 rounded-5">LİST İTEM 3</a></button></li>
+            </ul>
+          </li>
+          <ul class="navbar-nav me-auto  mb-lg-0">
+          <li class="nav-item mx-4">
+            <div class="input-group ">
+              <button class="btn btn-outline" type="button" id="button-addon2" onclick="toggleSearchBox()"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+              <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
+            </div>
+          </li>
+          </ul>
+        </ul>
+        <div class="navbar  mx-1" id="login">
+            <a href="#" class="nav-link text-white mx-4">LOGİN</a>
+        </div>
+        <div class="navbar  mx-3" id="login">
+            <a href="#" class="nav-link text-white mx-4">SİGN UP</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <!--nav/-->
+<script>
+ //search box function
+ function toggleSearchBox() {
+  var searchBar = document.getElementById('search-input');
+  if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+    searchBar.style.display = 'block';
+  } else {
+    searchBar.style.display = 'none';
+  }
+}
+</script>
+</body>
+</html>

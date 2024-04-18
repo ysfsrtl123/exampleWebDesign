@@ -1,0 +1,70 @@
+body {
+    
+    background-image: linear-gradient(to right, #0d0d33, #14144b, #1a1a5a, #14144b, #0d0d33); 
+    height: 100vh ;
+    
+
+
+}
+#listItem {
+    background-image: linear-gradient(to right, #0d0d33, #14144b, #1a1a5a, #14144b, #0d0d33); 
+    height: auto ;
+    border: solid 1px ;
+    border-color: rgba(197, 135, 255, 0.842);
+    position: absolute;
+    
+}
+#sign {
+ border: solid 2px;
+ border-radius: 15px;
+ border-color: rgba(145, 82, 145, 0.842);
+}
+#sign:hover {
+    background-color: rgba(145, 82, 145, 0.842);
+}
+#login {
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: rgba(145, 82, 145, 0.842);
+   
+    
+}
+#login:hover {
+    background-color: rgba(145, 82, 145, 0.842);
+
+}
+#listitem:hover {
+    background-color: rgba(197, 135, 255, 0.842);
+} 
+.nav-item:hover {
+    background-color: rgb(51, 14, 100);
+    border-radius: 15px;
+    
+}
+#page:hover {
+    border-bottom: 1px solid;
+    
+}
+#search-input {
+    display: none;
+    border: solid 3px;
+    border-color: rgba(145, 82, 145, 0.842);
+
+
+}
+#button-addon2 {
+    border: solid 2px;
+    border-radius: 20px;
+    border-color: rgba(145, 82, 145, 0.842)
+}
+   
+
+#button-addon2:hover {
+    background-color: rgba(145, 82, 145, 0.842);
+    
+}  
+#home-image {
+    border: solid 5px;
+    border-color: rgba(145, 82, 145, 0.842);
+    border-radius: 8px;
+}
