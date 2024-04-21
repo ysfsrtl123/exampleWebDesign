@@ -68,3 +68,14 @@ body {
     border-color: rgba(145, 82, 145, 0.842);
     border-radius: 8px;
 }
+.card {
+    transition: transform 0.4s; 
+}
+
+.card:hover {
+    transform: scale(1.05); /* Kartı biraz büyütür */
+    z-index: 5; /* Diğer kartların üzerine çıkmasını sağlar */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Hafif bir gölge ekler */
+    border: solid 3px;
+    border-color: rgba(145, 82, 145, 0.842);
+}

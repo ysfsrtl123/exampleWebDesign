@@ -40,20 +40,24 @@
           <li class="nav-item mx-4">
             <a href="#" class="nav-link text-white mx-4" id="page">Join Us</a>
           </li>
-          <li class="nav-item dropdown mx-2 ">
+          <li class="nav-item dropdown mx-2 mx-4">
             <button class="btn  dropdown-toggle text-white" id="page" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               LİST
             </button>
-            <ul class="dropdown-menu text-center rounded-4" id="listItem">
-              <li class="nav-item "id="listitem"><a href="#" class=" nav-link text-white my-1 rounded-5">LİST İTEM 1</a></li>
-              <li class="nav-item "id="listitem" ><a href="#" class="nav-link text-white my-2 rounded-5">LİST İTEM 2</a></button></li>
-              <li class="nav-item "id="listitem"><a href="#" class="nav-link text-white my-2 rounded-5">LİST İTEM 3</a></button></li>
+            <ul class="dropdown-menu text-center  rounded-4" id="listItem">
+              <hr style="color: white;">
+              <li class="nav-item nav-link"id="listitem"><a href="#" class=" nav-link text-white  rounded-5">LİST İTEM 1</a></li>
+              <hr style="color: white;">
+              <li class="nav-item nav-link"id="listitem" ><a href="#" class="nav-link text-white  rounded-5">LİST İTEM 2</a></button></li>
+              <hr style="color: white;">
+              <li class="nav-item nav-link "id="listitem"><a href="#" class="nav-link text-white  rounded-5">LİST İTEM 3</a></button></li>
+              <hr style="color: white;">
             </ul>
           </li>
           <ul class="navbar-nav me-auto  mb-lg-0">
-          <li class="nav-item mx-4">
+          <li class="nav-item mx-3">
             <div class="input-group ">
-              <button class="btn btn-outline" type="button" id="button-addon2" onclick="toggleSearchBox()"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+              <button class="btn btn-outline" type="search" id="button-addon2" onclick="toggleSearchBox()"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
               <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
             </div>
           </li>
@@ -62,7 +66,7 @@
         <div class="navbar  mx-1" id="login">
             <a href="#" class="nav-link text-white mx-4">LOGİN</a>
         </div>
-        <div class="navbar  mx-3" id="login">
+        <div class="navbar  mx-2" id="login">
             <a href="#" class="nav-link text-white mx-4">SİGN UP</a>
         </div>
       </div>
@@ -71,12 +75,51 @@
    <!--nav/-->
   
    <!--slider-->
-   <div class="container-md mx-auto text-center text-white ">
+   <div class="container-fluid mx-auto text-center text-white ">
     <div class="col mt-5">
       <img src="https://placehold.co/1300x600" alt="background-image" id="home-image"/>
     </div>
    </div>
    <!--/slider-->
+
+   <!--arakısım-->
+   <div class="container text-center">
+    <div class="row align-items-center">
+      <div class="col">
+        <div class="card mt-5" style="width: 18rem;">
+          <img src="https://placehold.co/80x50" class="card-img-top" alt="..." loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolorum tenetur eveniet aspernatur hic dolorem, officia atque obcaecati!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mt-5" style="width: 18rem;">
+          <img src="https://placehold.co/80x50" class="card-img-top" alt="..." loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, reiciendis dignissimos blanditiis illo veritatis iusto dolorum iure consequuntur!</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mt-5" style="width: 18rem;">
+          <img src="https://placehold.co/80x50" class="card-img-top" alt="..." loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore temporibus tenetur nihil, dolore illum quidem quaerat impedit eaque.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+      <div class="card mt-5" style="width: 18rem;">
+        <img src="https://placehold.co/80x50" class="card-img-top" alt="..." loading="lazy">
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit, nihil ex sed quisquam illo excepturi architecto? Iusto? dolorum iure consequuntur!</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
 <script>
  //search box function
  function toggleSearchBox() {
