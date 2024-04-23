@@ -79,3 +79,21 @@ body {
     border: solid 3px;
     border-color: rgba(145, 82, 145, 0.842);
 }
+#footerContainer {
+    background-image: linear-gradient(to right, #07071f, #0b0b1d, #080827, #0b0b1d, #07071f);
+}
+#links:hover{
+    background-color: rgba(145, 82, 145, 0.842);
+
+}
+#submitBtn:hover {
+background-color: rgba(99, 20, 99, 0.842);
+}
+#submitBtn {
+    background-color: rgba(145, 82, 145, 0.842);
+    border: solid 2px;
+    border-color: rgba(99, 20, 99, 0.842);
+}
+#btn2:hover {
+    background-color: rgba(145, 82, 145, 0.842);
+}
