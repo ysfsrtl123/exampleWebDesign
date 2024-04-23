@@ -64,16 +64,16 @@
           </ul>
         </ul>
         <div class="navbar  mx-1" id="login">
-            <a href="#" class="nav-link text-white mx-4">LOGİN</a>
+            <a href="#" class="nav-link stretched-link text-white mx-4">LOGİN</a>
         </div>
         <div class="navbar  mx-2" id="login">
-            <a href="#" class="nav-link text-white mx-4">SİGN UP</a>
+            <a href="#" class="nav-link stretched-link text-white mx-4">SİGN UP</a>
         </div>
       </div>
     </div>
   </nav>
    <!--nav/-->
-  <hr style=" color: rgba(145, 82, 145, 0.842);">
+  <hr  class="border-bottom" style=" color: rgba(145, 82, 145, 0.842);">
    <!--slider-->
    <div class="container-fluid mx-auto text-center text-white ">
     <div class="col mt-5">
@@ -83,8 +83,8 @@
    <!--/slider-->
 
    <!--loading-->
-   <div class="text-center">
-    <div class="spinner-border" role="status">
+   <div class="text-center " id="loading">
+    <div class="spinner-border text-white" role="status">
       <span class="visually-hidden">Loading...</span>
     </div>
   </div>
@@ -99,6 +99,7 @@
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis dolorum tenetur eveniet aspernatur hic dolorem, officia atque obcaecati!</p>
           </div>
+          <a href="#" class="stretched-link"></a>
         </div>
       </div>
       <div class="col">
@@ -107,6 +108,7 @@
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, reiciendis dignissimos blanditiis illo veritatis iusto dolorum iure consequuntur!</p>
           </div>
+          <a href="#" class="stretched-link"></a>
         </div>
       </div>
       <div class="col">
@@ -115,6 +117,7 @@
           <div class="card-body">
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore temporibus tenetur nihil, dolore illum quidem quaerat impedit eaque.</p>
           </div>
+          <a href="#" class="stretched-link"></a>
         </div>
       </div>
       <div class="col">
@@ -123,6 +126,7 @@
         <div class="card-body">
           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam impedit, nihil ex sed quisquam illo excepturi architecto? Iusto? dolorum iure consequuntur!</p>
         </div>
+        <a href="#" class="stretched-link"></a>
       </div>
       </div>
     </div>
@@ -220,6 +224,13 @@
     searchBar.style.display = 'none';
   }
 }
+//loading icon event listener function
+document.addEventListener("DOMContentLoaded", function() {
+    window.addEventListener("load", function() {
+        var loading = document.getElementById("loading");
+        loading.style.display = "none";
+    });
+});
 </script>
 </body>
 </html>
