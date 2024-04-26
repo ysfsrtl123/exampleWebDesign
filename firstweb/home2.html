@@ -2,7 +2,7 @@
 <html lang="en" lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>WEB | ANASAYFA</title>
+    <title>WEB | HOME</title>
  <!--FONTS-->   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,10 +29,10 @@
       <div class="collapse navbar-collapse " id="navbarNavDropdown">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item mx-5">
-            <a class="nav-link active text-white mx-4 " id="page" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-white mx-4 " id="page" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item mx-5">
-            <a class="nav-link text-white mx-4" id="page" href="#">Features</a>
+            <a class="nav-link text-white mx-4" id="page" href="Features.html">Features</a>
           </li>
           <li class="nav-item mx-4">
             <a class="nav-link text-white mx-4" id="page" href="#">Pricing</a>
@@ -56,10 +56,14 @@
           </li>
           <ul class="navbar-nav me-auto  mb-lg-0">
           <li class="nav-item mx-2">
+            
             <div class="input-group ">
-              <button class="btn btn-outline" type="search" id="button-addon2" onclick="toggleSearchBox()"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
-              <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
+              <button class="btn btn-outline"  id="button-addon2" onclick="toggleSearchBox()"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+              <form role="search">
+              <input type="search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
+              </form>
             </div>
+             
           </li>
           </ul>
         </ul>
@@ -75,11 +79,44 @@
    <!--nav/-->
   <hr  class="border-bottom" style=" color: rgba(145, 82, 145, 0.842);">
    <!--slider-->
-   <div class="container-fluid mx-auto text-center text-white ">
-    <div class="col mt-5">
-      <img src="https://placehold.co/1300x600" alt="background-image" id="home-image"/>
+   <div id="carouselExampleDark" class="carousel carousel-dark slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
-   </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="https://placehold.co/1300x600" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="https://placehold.co/1300x600" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://placehold.co/1300x600" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
    <!--/slider-->
 
    <!--loading-->
@@ -90,7 +127,7 @@
   </div>
   <!--/loading-->
 
-   <!--arakısım-->
+   <!--body-->
    <div class="container-md text-center ">
     <div class="row align-items-center">
       <div class="col">
@@ -131,7 +168,7 @@
       </div>
     </div>
   </div>
-  <!--bir kısım daha-->
+  <!--content section-->
 <div class="container-md border-top  mt-5">
   <div class="row">
    <div class="col align-self-start">
@@ -142,12 +179,22 @@
     <hr class="text-white border-bottom">
     <p class="text-white mx-3" id="demo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur iusto quas recusandae non iste vero pariatur nesciunt autem culpa natus aliquid vel cupiditate, ullam ex ut magni voluptate possimus? Aliquid suscipit nesciunt recusandae ab maxime tenetur totam esse eum iste tempore iure, quas culpa aliquam illum id error saepe obcaecati eligendi similique quaerat minima. Tempore expedita earum ratione aut nesciunt excepturi voluptatibus eligendi iure sint harum consequuntur facere quisquam, obcaecati consequatur maiores molestiae quis laboriosam atque? Placeat in maxime quasi exercitationem doloremque libero molestias necessitatibus inventore, eum culpa aut et? Nobis, rem modi? Labore, numquam harum incidunt temporibus delectus quibusdam asperiores hic recusandae a vel molestiae quo minima velit consequuntur quod laudantium porro tempore. Maxime exercitationem placeat minus vitae quo in asperiores, omnis praesentium nostrum. A repudiandae quae debitis fugit quisquam dignissimos, expedita placeat excepturi adipisci eligendi magni explicabo molestiae mollitia ratione, accusantium tempora aliquid iste nisi nesciunt. Enim, iure.</p>
    </div>
-   <div class="btn mt-4"> <a onclick="" class="btn btn text-white rounded-pill" style="border: solid 2px; border-color: rgba(145, 82, 145, 0.842);" id="btn2">Change</a></div>
+   <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+    <div class=" btn-group me-2" role="group" aria-label="First group">
+      <button type="button" class="btn btn-primary"><a href="#" class="text-white" id="butn1">1</a></button>
+      <button type="button" class="btn btn-primary"><a href="#" class="text-white" id="butn2">2</a></button>
+      <button type="button" class="btn btn-primary"><a href="#" class="text-white" id="butn3">3</a></button>
+      <button type="button" class="btn btn-primary"><a href="#" class="text-white" id="butn4"> 4 </a></button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group">
+      <button type="button" onclick="changeNumbers()" class="btn btn-info " id="butn5">. . .</button>
+    </div>
+  </div>
   </div>
 
 </div>
-  <!--/bir kısım daha-->
-  <!--/arakısım-->
+  <!--/content section-->
+  <!--/body-->
 
   <!--footer-->
   <footer>
@@ -206,12 +253,16 @@
                   </div>
                   </div>
               </div>
+              <!--copyright-->
+              <p class="mx-5 mt-5 text-center" id="copyright" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a class="btn text-info mx-3" property="dct:title" rel="cc:attributionURL" href="https://github.com/ysfsrtl123/web-2">html template</a> by <a class="btn text-info mx-3" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/yusuf-sertel-525321224/">Yusuf Sertel</a> is licensed under <a  class="btn  text-info mx-3" href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-ShareAlike 4.0 International<img class="mx-1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img class="mx-1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img class="mx-1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+              <!--/copyright-->
               </div>
           </div>
       </div>
+      
   </div>
+
   </footer>
-  
   <!--/footer-->
   
 <script>
@@ -224,6 +275,21 @@
     searchBar.style.display = 'none';
   }
 }
+//change numbers function
+function changeNumbers() {
+  var btn1 = document.getElementById('butn1');
+        var btn2 = document.getElementById('butn2');
+        var btn3 = document.getElementById('butn3');
+        var btn4 = document.getElementById('butn4');
+
+        btn1.innerText = parseInt(butn1.innerText) + 4;
+        btn2.innerText = parseInt(butn2.innerText) + 4;
+        btn3.innerText = parseInt(butn3.innerText) + 4;
+        btn4.innerText = parseInt(butn4.innerText) + 4;
+    
+}
+
+
 //loading icon event listener function
 document.addEventListener("DOMContentLoaded", function() {
     window.addEventListener("load", function() {
@@ -231,6 +297,13 @@ document.addEventListener("DOMContentLoaded", function() {
         loading.style.display = "none";
     });
 });
+
+const myCarouselElement = document.querySelector('#myCarousel')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 2000,
+
+})
 </script>
 </body>
 </html>
