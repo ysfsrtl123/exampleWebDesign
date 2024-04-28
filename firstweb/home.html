@@ -14,8 +14,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <!--bootstrap/-->
 <!--links-->
+    <link rel="stylesheet" href="style.css"/>                                                       <!--SİGNUP VE LOGİN DÜĞMELERİNİ KAYIT OLDUKTAN SONRA USER İKONUNA ÇEFVİRECEKSİN UNUTMA-->
     <link rel="stylesheet" href="style.css"/>
-    <link href="main.js"/>
+    <link href="main.js"/>   
 <!--links/-->
 </head>
 <body>
@@ -29,20 +30,20 @@
       <div class="collapse navbar-collapse " id="navbarNavDropdown">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item mx-5">
-            <a class="nav-link active text-white mx-4 " id="page" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link-active text-white mx-3" id="page" aria-current="page" href="home.html">Home</a>
           </li>
           <li class="nav-item mx-5">
-            <a class="nav-link text-white mx-4" id="page" href="Features.html">Features</a>
+            <a class="nav-link text-white mx-3" id="page" href="News.html">News</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link text-white mx-4" id="page" href="#">Pricing</a>
+            <a class="nav-link text-white mx-3" id="page" href="#">Blog</a>
           </li>
           <li class="nav-item mx-4">
             <a href="#" class="nav-link text-white mx-4" id="page">Join Us</a>
           </li>
-          <li class="nav-item dropdown mx-2 mx-4">
+          <li class="nav-item dropdown mx-2 ">
             <button class="btn  dropdown-toggle text-white" id="page" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              LİST
+              Catagories
             </button>
             <ul class="dropdown-menu text-center  rounded-4" id="listItem">
               <hr style="color: white;">
@@ -72,6 +73,9 @@
         </div>
         <div class="navbar  mx-2" id="login">
             <a href="#" class="nav-link stretched-link text-white mx-4">SİGN UP</a>
+        </div>
+        <div class="navbar rounded-pill " id="userhidden">
+          <a href="#" class="nav-link stretched-link text-white mx-4"> </a>
         </div>
       </div>
     </div>
@@ -266,6 +270,20 @@
   <!--/footer-->
   
 <script>
+// Select the buttons
+const signupButton = document.getElementById("login");
+const userButton = document.getElementById("userhidden");
+
+// Add event listener to the signup button
+signupButton.addEventListener("click", () => {
+    
+  signupButton.style.display = "none";
+    // Show user button
+    userButton.style.display = "block";
+});
+
+
+
  //search box function
  function toggleSearchBox() {
   var searchBar = document.getElementById('search-input');

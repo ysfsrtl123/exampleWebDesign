@@ -104,3 +104,12 @@ background-color: rgba(99, 20, 99, 0.842);
     color: white;
     
 }
+#userhidden {
+    display: none;
+   
+}
+#userhidden:active {
+    border: solid 2px;
+    border-radius: 15px;
+    border-color: rgba(145, 82, 145, 0.842);
+}
