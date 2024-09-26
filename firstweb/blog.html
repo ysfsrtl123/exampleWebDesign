@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>WEB | Blog</title>
+ <!--FONTS-->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/848045a3cd.js" crossorigin="anonymous"></script>
+<!--FONTS/-->
+<!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!--bootstrap/-->
+<!--links-->                                      
+    <link rel="stylesheet" href="style.css"/>
+    <link href="main.js"/>
+<!--links/-->
+</head>
+<body>
+ <!--navbar-->
+ <nav id="navB" class="navbar navbar-expand-lg mx-auto">
+    <div class="container-fluid mt-4 mx-auto">
+      <a href="#" class="navbar-brand text-white mx-2"><h2 class="h2">BRAND</h2></a>
+      <button class="navbar-toggler text-white bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-5">
+            <a class="nav-link text-white mx-3 " id="page" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link text-white mx-3 " id="page" href="News.html">News</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a class="nav-link-active text-white mx-3" id="page" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item mx-4">
+            <a href="#" class="nav-link text-white mx-4" data-bs-toggle="modal" id="page" data-bs-target="#staticBackdrop">Join Us</a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+               <h1 class="modal-title fs-5" id="staticBackdropLabel">Join Us</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+             <!--form-->
+             <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+              </div>
+              <div class="mb-3">
+                <label for="surname" class="form-label">Surname</label>
+                <input type="text" class="form-control" id="surname" required>
+              </div>
+              <div class="mb-3">
+                <label for="Phone" class="form-label">Phone</label>
+                <input type="tel" class="form-control" id="Phone" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+            <!--/form-->
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-outline-primary rounded-pill">send</button>
+          </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+           </li>
+          </li>
+          <li class="nav-item dropdown mx-2 mx-4">
+            <button class="btn  dropdown-toggle text-white" id="page" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catagories
+            </button>
+            <ul class="dropdown-menu text-center  rounded-4" id="listItem">
+              <hr style="color: white;">
+              <li class="nav-item nav-link"id="listitem"><a href="#" class=" nav-link text-white  rounded-5">LİST İTEM 1</a></li>
+              <hr style="color: white;">
+              <li class="nav-item nav-link"id="listitem" ><a href="#" class="nav-link text-white  rounded-5">LİST İTEM 2</a></button></li>
+              <hr style="color: white;">
+              <li class="nav-item nav-link "id="listitem"><a href="#" class="nav-link text-white  rounded-5">LİST İTEM 3</a></button></li>
+              <hr style="color: white;">
+            </ul>
+          </li>
+          <ul class="navbar-nav me-auto  mb-lg-0">
+          <li class="nav-item mx-2">
+            
+            <div class="input-group ">
+              <button class="btn btn-outline"  id="button-addon2" onclick="toggleSearchBox()"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+              <form role="search">
+              <input type="search" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2" id="search-input">
+              </form>
+            </div>
+             
+          </li>
+          </ul>
+        </ul>
+        <div class="navbar  mx-1" id="login">
+            <a href="#" class="nav-link stretched-link text-white mx-4">LOGİN</a>
+        </div>
+        <div class="navbar  mx-2" id="login">
+            <a href="#" class="nav-link stretched-link text-white mx-4">SİGN UP</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+   <!--nav/-->
+   <!--Section-->
+   <section>
+    <div class="clearfix text-white mt-5">
+      <h4 class="text-center border rounded-pill">TİTTLE</h4>
+      <img src="https://placehold.co/400x200?text=Hello+World" class="col-md-6 float-md-end mb-3 ms-md-3 mt-5 mx-4" alt="...">
+      <p class="mx-2 mt-4">
+        A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+      </p>
+    
+      <p class="mx-2">
+        As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+      </p>
+    
+      <p class="mx-2">
+        And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor doloribus tempora. Distinctio, quod. Eius iste deserunt ipsum dolorum quas ea quo laborum perferendis sit illo, minima maiores sint id cumque excepturi. Maxime libero eos magni sed mollitia nostrum corporis tempora quas adipisci. Molestias, voluptates exercitationem alias ad dolorum officia natus iste totam dolorem sint eum dolor obcaecati velit ipsam nobis aut qui autem ab, laboriosam nostrum illum possimus consequuntur! Unde similique earum tempore eos odit qui, aliquam, itaque voluptatum possimus fugit repellendus, culpa consequatur sint sunt cum recusandae ullam? Distinctio tenetur numquam voluptatum laudantium accusantium, quo velit, mollitia eius dicta non sequi ducimus consequatur sapiente qui. Ducimus quos eum provident exercitationem facere quis libero alias ipsam nihil. Fugiat ad perferendis mollitia quas asperiores, molestias assumenda quisquam, nobis minima consequatur sit ipsa ipsum iure, autem qui eum laboriosam earum. Voluptate asperiores quisquam aspernatur exercitationem. Eius dolores aspernatur cum ipsa ipsum nemo dolorum ducimus explicabo perferendis accusamus inventore quam consequuntur, maxime tempora, aut aperiam ipsam! Sit voluptas delectus quod esse soluta cumque autem! Eos veniam praesentium architecto totam, itaque vitae odit rem, culpa sequi nostrum dolor accusantium illum in unde recusandae ad possimus ut quam temporibus tempora. Accusamus ea laborum quasi!
+      </p>
+    </div>
+   </section>
+
+   <section class=" mt-4">
+    <div class="row">
+      <div class="mt-2" id="linebottom"><h3 class=" text-center text-white "><span class="badge bg-secondary">TITTLE</span></h3></div>
+      <div class="col-md-6 ">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action mt-3 border-bottom" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <small>And some small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 ">
+        <div class="list-group ">
+          <a href="#" class="list-group-item list-group-item-action mt-3 border-bottom" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small>3 days ago</small>
+            </div>
+            <small>And some small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">List group item heading</h5>
+              <small class="text-body-secondary">3 days ago</small>
+            </div>
+            <small class="text-body-secondary">And some muted small print.</small>
+          </a>
+        </div>
+    </div>
+   </section>
+   <!--/Section-->
+   <!--Section-->
+<section class="text-white">
+  <div class="container-fluid mt-3" id="linetop">
+    <div class="row">
+      <h2 class="mt-3">Comments</h2>
+      <div class="container mt-5">
+        <form>
+            <div class="mb-3 d-flex align-items-start">
+                <img src="https://via.placeholder.com/50" alt="Profil Fotoğrafı" class="rounded-circle me-3">
+                <div class="w-100">
+                    <label for="comment" class="form-label">your comment</label>
+                    <textarea class="form-control" id="comment" rows="4" placeholder="write..." required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mx-5">Send</button>
+        </form>
+    </div>
+    <div class="container mt-5">
+      <div class="card">
+          <div class="card-body">
+              <div class="d-flex align-items-start">
+                  <img src="https://via.placeholder.com/50" alt="Profil Fotoğrafı" class="rounded-circle me-3">
+                  <div class="w-100">
+                      <h6 class="card-title">John Doe</h6>
+                      <blockquote class="blockquote">
+                          <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quidem deserunt quod ducimus rem molestias!</p>
+                      </blockquote>
+                      <footer class="blockquote-footer">4 hours ago</footer>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="container mt-2">
+    <div class="card">
+        <div class="card-body">
+            <div class="d-flex align-items-start">
+                <img src="https://via.placeholder.com/50" alt="Profil Fotoğrafı" class="rounded-circle me-3">
+                <div class="w-100">
+                    <h6 class="card-title">John Doe</h6>
+                    <blockquote class="blockquote">
+                        <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eaque? Quod quia vero deleniti nulla?</p>
+                    </blockquote>
+                    <footer class="blockquote-footer">4 hours ago</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container mt-2">
+  <div class="card">
+      <div class="card-body">
+          <div class="d-flex align-items-start">
+              <img src="https://via.placeholder.com/50" alt="Profil Fotoğrafı" class="rounded-circle me-3">
+              <div class="w-100">
+                  <h6 class="card-title">John Doe</h6>
+                  <blockquote class="blockquote">
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eaque? Quod quia vero deleniti nulla?</p>
+                  </blockquote>
+                  <footer class="blockquote-footer">4 hours ago</footer>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="container mt-2">
+  <div class="card">
+      <div class="card-body">
+          <div class="d-flex align-items-start">
+              <img src="https://via.placeholder.com/50" alt="Profil Fotoğrafı" class="rounded-circle me-3">
+              <div class="w-100">
+                  <h6 class="card-title">John Doe</h6>
+                  <blockquote class="blockquote">
+                      <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, eaque? Quod quia vero deleniti nulla?</p>
+                  </blockquote>
+                  <footer class="blockquote-footer">4 hours ago</footer>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+    </div>
+    
+    </div>
+  </div>
+</section>
+   <!--/Section-->
+    <!--footer-->
+  <footer>
+    <div class="container-fluid  text-white-50 footer pt-5 mt-5" id="footerContainer">
+      <div class="container py-5">
+          <div class="pb-4 mb-5">
+              <div class="row g-4">
+                  <div class="col-lg-3">
+                      <a href="#" class="nav-link">
+                          <h1 class="text-white  h2">BRAND</h1>
+                      </a>
+                      <p class="text-white  mt-2">Lorem ipsum dolor sit amet.</p>
+                  </div>
+                  <div class="col-lg-6">
+                      <div class="position-relative mx-auto">
+                          <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="email" placeholder="E-Mail">
+                          <button type="submit" class="btn border-0  py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0 ;" id="submitBtn">Contact Us</button>
+                      </div>
+                  </div>
+                  <div class="col-lg-3">
+                      <div class="d-flex justify-content-end pt-3">
+                          <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#" id="links"><i class="fa-brands fa-x-twitter"></i></a>
+                          <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#" id="links"><i class="fab fa-facebook-f"></i></a>
+                          <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#" id="links"><i class="fab fa-youtube"></i></a>
+                          <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#" id="links"><i class="fab fa-linkedin-in"></i></a>
+                          <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href="#" id="links"><i class="fa-brands fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row g-5">
+              <div class="col-lg-3 col-md-6">
+                  <div class="footer-item ">
+                      <h4 class="text-light mb-3">WHY US?</h4>
+                      <p class="mb-4">Lorem ipsum dolor sit amet.</p>
+                      <a href="#" class="btn   py-2 px-4 rounded-pill text-white" id="links">MORE US</a>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mx-5">
+                  <div class="d-flex flex-column text-center footer-item">
+                      <h4 class="text-light mb-3"> Account:</h4>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links">My Account</a>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links">Web Page Details</a>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links">Card</a>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links">History</a>
+                  </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mx-5">
+                  <div class="d-flex flex-column text-center footer-item">
+                      <h4 class="text-light mb-3"> Page Details:</h4>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links">About</a>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links">Privacy Policy</a>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links"> Terms & Conditions </a>
+                      <a class="nav-link mt-3 rounded-pill" href="#" id="links"> FAQ & HELP</a>
+                  </div>
+                  </div>
+              </div>
+              <!--copyright-->
+              <p class="mx-5 mt-5 text-center" id="copyright" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a class="btn text-info mx-3" property="dct:title" rel="cc:attributionURL" href="https://github.com/ysfsrtl123/web-2">html template</a> by <a class="btn text-info mx-3" rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://www.linkedin.com/in/yusuf-sertel-525321224/">Yusuf Sertel</a> is licensed under <a  class="btn  text-info mx-3" href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Creative Commons Attribution-ShareAlike 4.0 International<img class="mx-1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img class="mx-1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img class="mx-1" style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+              <!--/copyright-->
+              </div>
+          </div>
+      </div>
+      
+  </div>
+
+  </footer>
+  <script>function toggleSearchBox() {
+    var searchBar = document.getElementById('search-input');
+    if (searchBar.style.display === 'none' || searchBar.style.display === '') {
+      searchBar.style.display = 'block';
+    } else {
+      searchBar.style.display = 'none';
+    }
+  }</script>
+  <!--/footer-->
+</body>
+</html>
