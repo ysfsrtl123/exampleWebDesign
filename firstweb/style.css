@@ -82,6 +82,7 @@ body {
 }
 #footerContainer {
     background-image: linear-gradient(to right, #07071f, #0b0b1d, #080827, #0b0b1d, #07071f);
+    border-top: solid 5px rgba(145, 82, 145, 0.842);
 }
 #links:hover{
     background-color: rgba(145, 82, 145, 0.842);
@@ -112,4 +113,41 @@ background-color: rgba(99, 20, 99, 0.842);
     border: solid 2px;
     border-radius: 15px;
     border-color: rgba(145, 82, 145, 0.842);
+}
+#sliderBtn {
+    position: absolute;
+  left: 0; 
+  width: 50px;
+  height: 50px; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+#sliderBtnNext{
+    position: absolute;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+#sliderBtnNext:hover,
+#sliderBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Üzerine gelince daha belirgin */
+}
+
+#breakingnw {
+    border-bottom: solid 5px black;
+    
+}
+#linetop {
+    border-top: solid 3px rgba(145, 82, 145, 0.842);
+}
+#linebottom {
+    border-bottom: solid 3px rgba(145, 82, 145, 0.842);
 }
