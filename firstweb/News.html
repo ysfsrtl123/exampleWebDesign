@@ -29,17 +29,53 @@
       <div class="collapse navbar-collapse " id="navbarNavDropdown">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item mx-5">
-            <a class="nav-link active text-white mx-3 " id="page" aria-current="page" href="home.html">Home</a>
+            <a class="nav-link active text-white mx-3 " id="page" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item mx-5">
             <a class="nav-link-active text-white mx-3 " id="page" href="News.html">News</a>
           </li>
           <li class="nav-item mx-4">
-            <a class="nav-link text-white mx-3" id="page" href="#">Blog</a>
+            <a class="nav-link text-white mx-3" id="page" href="blog.html">Blog</a>
           </li>
           <li class="nav-item mx-4">
-            <a href="#" class="nav-link text-white mx-4" id="page">Join Us</a>
-          </li>
+            <a href="#" class="nav-link text-white mx-4" data-bs-toggle="modal" id="page" data-bs-target="#staticBackdrop">Join Us</a>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+               <h1 class="modal-title fs-5" id="staticBackdropLabel">Join Us</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                  <label for="surname" class="form-label">Surname</label>
+                  <input type="text" class="form-control" id="surname" required>
+                </div>
+                <div class="mb-3">
+                  <label for="Phone" class="form-label">Phone</label>
+                  <input type="tel" class="form-control" id="Phone" required>
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">E-mail</label>
+                  <input type="email" class="form-control" id="email">
+                </div>
+              <!--/form-->
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-outline-primary rounded-pill">send</button>
+            </form>
+                    </div>
+                  </div>
+               </div>
+             </div>
+           </li>
           <li class="nav-item dropdown mx-2 mx-4">
             <button class="btn  dropdown-toggle text-white" id="page" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Catagories
@@ -77,13 +113,100 @@
     </div>
   </nav>
    <!--nav/-->
-
-
+<!--Section-->
+<section>
+  <div class="container-fluid ">
+    <div class="row align-items-start">
+      <div class="col">
+  
+        <a href="#" class="card mt-5" style="width: 18rem; text-decoration: none;">
+          <img src="https://placehold.co/1000x500?text=Hello+World" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">News Title</h5>
+          </div>
+        </a>
+        <a href="#" class="card mt-3" style="width: 18rem; text-decoration: none;">
+          <img src="https://placehold.co/1000x500?text=Hello+World" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">News Title</h5>
+          </div>
+        </a>
+        <a href="#" class="card mt-3" style="width: 18rem; text-decoration: none;">
+          <img src="https://placehold.co/1000x500?text=Hello+World" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">News Title</h5>
+          </div>
+        </a>
+      </div>
+      <div class="col-6 align-items-center mt-5 me-4">
+        <div class="mt-5"></div>
+        <a href="" class="carousel slide carousel-fade mt-5 ">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://placehold.co/1000x500?text=Hello+World" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/1000x500?text=slide2" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://placehold.co/1000x500?text=slide3" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev" id="sliderBtn">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden"">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next" id="sliderBtnNext">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </a>
+         <div class="col mt-4 bg-light rounded-3">
+           <h3 class=" mx-2" id="breakingnw">Breaking News</h3>
+           <div class="list-group p-2"">
+            <a href="#" class="list-group-item list-group-item-action">New Tittle</a>
+            <a href="#" class="list-group-item list-group-item-action border-bottom">New Tittle</a>
+            <a href="#" class="list-group-item list-group-item-action">New Tittle</a>
+            <a href="#" class="list-group-item list-group-item-action">New Tittle</a>
+            <a class="list-group-item list-group-item-action">New Tittle</a>
+            <a class="list-group-item list-group-item-action">New Tittle</a>
+            <a class="list-group-item list-group-item-action">New Tittle</a>
+            <a class="list-group-item list-group-item-action">New Tittle</a>
+            <a class="list-group-item list-group-item-action">New Tittle</a>
+          </div>
+         </div>
+      </div>
+       <div class="col-md-3">
+        <a href="#" class="card mt-5" style="width: 18rem; text-decoration: none;">
+          <img src="https://placehold.co/1000x500?text=Hello+World" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">News Title</h5>
+          </div>
+        </a>
+        <a href="#" class="card mt-3" style="width: 18rem; text-decoration: none;">
+          <img src="https://placehold.co/1000x500?text=Hello+World" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">News Title</h5>
+          </div>
+        </a>
+        <a href="#" class="card mt-3" style="width: 18rem; text-decoration: none;">
+          <img src="https://placehold.co/1000x500?text=Hello+World" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">News Title</h5>
+          </div>
+        </a>
+       </div>
+    </div>
+  </div>
+</section>
+<!--/Section-->
 
 
     <!--footer-->
   <footer>
-    <div class="container-fluid  border-top text-white-50 footer pt-5 mt-5" id="footerContainer">
+    <div class="container-fluid  text-white-50 footer pt-5 mt-5" id="footerContainer">
       <div class="container py-5">
           <div class="pb-4 mb-5">
               <div class="row g-4">
